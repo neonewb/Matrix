@@ -1,0 +1,91 @@
+/* * - применяется ко всем элементам*/
+@charset "UTF-8";
+* {
+  font-size: 25px;
+  color:ForestGreen;
+  background: #e4f0e8;
+  box-sizing: border-box;
+}
+body {
+	text-align:center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.header {
+
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+  background-color: #006600;
+  color: white;
+  padding: 10px;
+}
+
+.neo:hover {
+  color: #006600
+  transition: 0.1s
+}
+.neo:active {
+	color: blue
+}
+
+a {
+  color:Green;
+  font-size: 150%;
+}
+a:hover {
+	color:#006600;
+	background-color: transparent;
+  text-decoration: none;
+  transition: 0.1s
+}
+a:active {
+	color:blue;
+	background-color: transparent;
+  text-decoration: none;
+}
+.google {
+	background-color: green;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.google:hover {
+	background-color: #006600;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.1s
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  background-color: green;
+}
+
+li a:hover {
+  background-color: #006600;
+  color: white;
+}
