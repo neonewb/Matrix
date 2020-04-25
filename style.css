@@ -1,48 +1,72 @@
-/* * - применяется ко всем элементам*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @charset "UTF-8";
 * {
   font-size: 25px;
   color:ForestGreen;
   background: #e4f0e8;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
-body {
-	text-align:center;
+
+html, body {
+  height: 100%;
+	text-align: center;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0;
 }
-.header {
 
+.body {
+  display: flex;
+  flex-direction: column;
 }
+
 .content {
-  flex: 1 0 auto;
+  margin-top: 15px;
+  font-weight: bold;
 }
+
+.smallText {
+  font-weight: 1;
+  font-size: 16px;
+}
+
 .footer {
-  flex-shrink: 0;
+  margin-top: auto;
   background-color: #006600;
   color: white;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-telegramLink {
+  width: 32px;
+  height: 32px;
 }
 
 @media only screen and (max-width:430px) {
   /* For mobile phones: */
   .header {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 .neo:hover {
-  color: #006600
+  color: #006600;
   transition: 0.1s
 }
 .neo:active {
 	color: blue
 }
 
-a {
-  color:Green;
-  font-size: 110%;
-}
 a:hover {
 	color:#006600;
 	background-color: transparent;
@@ -53,23 +77,6 @@ a:active {
 	color:blue;
 	background-color: transparent;
   text-decoration: none;
-}
-.google {
-	background-color: green;
-  color: white;
-  padding: 5px 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-.google:hover {
-	background-color: #006600;
-  color: white;
-  padding: 5px 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.1s
 }
 
 ul {
@@ -94,4 +101,109 @@ li a {
 li a:hover {
   background-color: #006600;
   color: white;
+}
+
+.calculName {
+  margin-bottom: 15px;
+}
+
+.calculInputDiv {
+  display: flex;
+  flex-direction: column;
+  width: 365px;
+  height: 90px;
+  border: black 2px solid;
+  border-radius: 4px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.calculInputPrevious {
+  width: 360px;
+  height: 25px;
+  padding: 5px;
+  margin: auto;
+  text-align: right;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.calculInputCurrent {
+  margin: auto;
+  width: 360px;
+  height: 50px;
+  text-align: right;
+  font-size: 35px;
+  padding: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+/* Hide Input Number Arrows in Chrome, Safari, Edge, Opera  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide Input Number Arrows in Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.calculatorButtons {
+  display: flex;
+  width: 370px;
+  align-self: center;
+  Justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+}
+
+.operatorButtons, .numberButtons {
+  width: 85px;
+  height: 70px;
+}
+
+.operatorButtons {
+  background-color: #000000e1;
+  border: none;
+  color: #69be6c;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.operatorButtons:hover {
+  background-color: #000000a2;
+}
+
+.operatorButtons:active {
+  background-color: #000000e1;
+}
+
+.numberButtons {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.numberButtons:hover {
+  background-color: #006600;
+}
+
+.numberButtons:active {
+  background-color: #4CAF50;
 }
