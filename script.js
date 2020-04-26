@@ -22,7 +22,7 @@ let buttonDot = document.getElementById('buttonDot');
 plusButton.addEventListener('click', onPlusButtonClick);
 minusButton.addEventListener('click', onMinusButtonClick);
 multiplyButton.addEventListener('click', onMultiplyButtonClick);
-buttonDivision.addEventListener('click', onDivideButtonClick);
+divideButton.addEventListener('click', onDivideButtonClick);
 equalButton.addEventListener('click', calculate);
 deleteButton.addEventListener('click', onDeleteButtonClick);
 clearButton.addEventListener('click', onClearButtonClick);
